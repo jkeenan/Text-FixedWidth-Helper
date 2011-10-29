@@ -42,7 +42,8 @@ my $cwd = cwd();
     eval {
         $produced = d2fw( $input, $output );
     };
-    like( $@, qr/Could not locate input file $input/, "Got expected death message: input not found" );
+    like( $@, qr/Could not locate input file $input/,
+        "Got expected death message: input not found" );
 }
 
 {
@@ -92,6 +93,8 @@ my $cwd = cwd();
             \$stdout,
             \$stderr,
         );
+print STDERR "out: $stdout\n";
+print STDERR "err: $stderr\n";
         like( $stderr,
             qr/Text::FixedWidth::Helper restricts you to 3 input records/,
             "Got expected warning: too many sample records" );

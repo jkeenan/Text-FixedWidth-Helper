@@ -272,7 +272,7 @@ sub fw2d {
             $sum += $config[1];
         }
         else {
-            if ($sample_records_seen > 3) {
+            if ($sample_records_seen >= 3) {
                 carp "Text::FixedWidth::Helper restricts you to 3 input records";
                 last;
             }
@@ -282,6 +282,7 @@ sub fw2d {
                 push @parsed_record, [ $metadata[$f]->[0], $record[$f] ];
             }
             push @delimited_records, \@parsed_record;
+            $sample_records_seen++;
         }
     }
     $DATA->close() or croak "Unable to close $input after reading";

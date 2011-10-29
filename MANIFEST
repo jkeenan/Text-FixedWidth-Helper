@@ -15,4 +15,7 @@ t/testlib/02-sample.txt
 t/testlib/03-toolong.txt
 t/testlib/04-toomanyrecords.txt
 t/testlib/05-badmetadata.txt
+t/testlib/06-toolong.txt
+t/testlib/07-toomanyrecords.txt
+t/testlib/08-badmetadata.txt
 Todo
