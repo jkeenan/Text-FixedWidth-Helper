@@ -9,7 +9,6 @@ MANIFEST
 MANIFEST.SKIP
 README
 t/001-d2fw.t
-t/001_load.t
 t/testlib/01-sample.txt
 t/testlib/02-sample.txt
 t/testlib/03-toolong.txt
