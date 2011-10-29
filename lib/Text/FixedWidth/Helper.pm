@@ -200,8 +200,7 @@ sub d2fw {
     my $mod = $sum % 10;
     my $dec = int($sum / 10);
     my $OUT = IO::File->new($output, 'w');
-    croak "Could not open $output for writing"
-        unless defined $OUT;
+    croak "Could not open $output for writing" unless defined $OUT;
     print $OUT "1234567890" for (1 .. $dec);
     print $OUT $_ for (1 .. $mod);
     print $OUT "\n";
@@ -212,7 +211,7 @@ sub d2fw {
     }
     print $OUT "$spacer\n";
     print $OUT $datastr;
-    $OUT->close() or croak "Unable to close";
+    $OUT->close() or croak "Unable to close $output after writing";
     return $output;
 }
 
@@ -296,7 +295,7 @@ sub fw2d {
         print $OUT "\n";
     }
 
-    $OUT->close() or croak "Unable to close";
+    $OUT->close() or croak "Unable to close $output after writing";
     return $output;
 }
 
