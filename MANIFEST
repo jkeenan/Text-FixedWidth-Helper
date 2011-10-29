@@ -1,0 +1,12 @@
+Changes
+examples/d2fw_sample.pl
+examples/fw2d_sample.pl
+lib/Text/FixedWidth/Helper.pm
+LICENSE
+Makefile.PL
+MANIFEST
+README
+t/001_load.t
+t/testlib/01-sample.txt
+t/testlib/02-sample.txt
+Todo
