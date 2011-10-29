@@ -93,8 +93,6 @@ my $cwd = cwd();
             \$stdout,
             \$stderr,
         );
-print STDERR "out: $stdout\n";
-print STDERR "err: $stderr\n";
         like( $stderr,
             qr/Text::FixedWidth::Helper restricts you to 3 input records/,
             "Got expected warning: too many sample records" );
