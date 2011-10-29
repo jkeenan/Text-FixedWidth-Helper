@@ -12,4 +12,6 @@ t/001-d2fw.t
 t/testlib/01-sample.txt
 t/testlib/02-sample.txt
 t/testlib/03-toolong.txt
+t/testlib/04-toomanyrecords.txt
+t/testlib/05-badmetadata.txt
 Todo

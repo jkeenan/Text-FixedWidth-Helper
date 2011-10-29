@@ -186,13 +186,14 @@ sub d2fw {
             $sum += $config[1];
         }
         else {
-            if ($sample_records_seen > 3) {
+            if ($sample_records_seen >= 3) {
                 carp "Text::FixedWidth::Helper restricts you to 3 input records";
                 last;
             }
             my @record = split /\|/, $l, -1;
             my $outstr = pack($templ => @record);
             $datastr .= "$outstr\n";
+            $sample_records_seen++;
         }
     }
     $DATA->close() or croak "Unable to close $input after reading";
