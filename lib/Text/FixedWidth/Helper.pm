@@ -309,7 +309,7 @@ sub fw2d {
 
     James E Keenan
     CPAN ID: jkeenan
-    jkeenan@cpan.org
+    jkeenan@pobox.com
     http://thenceforward.net/perl/modules/Text-FixedWidth-Helper
 
 Thanks to Natasha Salam for describing the need for this functionality.

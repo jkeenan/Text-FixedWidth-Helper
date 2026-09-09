@@ -3,7 +3,10 @@
 /Makefile
 /Makefile.old
 /Text-FixedWidth-Helper-*.tar.gz
+/MYMETA.json
 /MYMETA.yml
+/META.json
+/META.yml
 /blib
 /pm_to_blib
 /cover_db/
