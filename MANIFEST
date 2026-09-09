@@ -19,3 +19,4 @@ t/testlib/06-toolong.txt
 t/testlib/07-toomanyrecords.txt
 t/testlib/08-badmetadata.txt
 Todo
+META.yml                                 Module meta-data (added by MakeMaker)

@@ -12,4 +12,5 @@ WriteMakefile(
                      'Scalar::Util' => 0, # verify
                      'IO::CaptureOutput' => 0, # for testing only
                     },
+    LICENSE     => 'perl',
 );
